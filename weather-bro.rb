@@ -5,20 +5,20 @@
 class WeatherBro < Formula
   desc ""
   homepage "https://github.com/ty-e-boyd/weather-bro"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.2/weather-bro_Darwin_x86_64.tar.gz"
-      sha256 "36fe275dfe64fc15735fbcb78b0df70c6ca07093ce5e7b7321160599a6be4b69"
+      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.3/weather-bro_Darwin_x86_64.tar.gz"
+      sha256 "153466d4e98241dbed07f536aa065b0405c175f479b5d0917d9c6e8bfb6db7eb"
 
       def install
         bin.install "weather-bro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.2/weather-bro_Darwin_arm64.tar.gz"
-      sha256 "b2e38923d8d0b2fc16dc7d29878fa5960cc78bc96aba958eee1e32a8add213e0"
+      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.3/weather-bro_Darwin_arm64.tar.gz"
+      sha256 "c6f18b7b52c1dc13e9e0f4a44087e80adfb3bcdf2ec9c93cf5a1ae343783fd21"
 
       def install
         bin.install "weather-bro"
@@ -28,16 +28,16 @@ class WeatherBro < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.2/weather-bro_Linux_x86_64.tar.gz"
-      sha256 "ff860a67904da844e6396536aee6b6f18cc07e27ba98d4f1b4f92e3bc784456e"
+      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.3/weather-bro_Linux_x86_64.tar.gz"
+      sha256 "ea95bc334dc19284a04fb7de186899c695215487567bf1a2e70a7708bf73761e"
 
       def install
         bin.install "weather-bro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.2/weather-bro_Linux_arm64.tar.gz"
-      sha256 "fa60ffed6d565df53bbf5c787179729b256b90f516cdfdd0865bfa1d8fe9f3fe"
+      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.3/weather-bro_Linux_arm64.tar.gz"
+      sha256 "98208c797caf934233843fd82973c7cafab294e8d9f2ea7b0ab3386abb67dba4"
 
       def install
         bin.install "weather-bro"
