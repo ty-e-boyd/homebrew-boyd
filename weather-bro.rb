@@ -5,20 +5,20 @@
 class WeatherBro < Formula
   desc ""
   homepage "https://github.com/ty-e-boyd/weather-bro"
-  version "1.0.4"
+  version "1.0.5"
 
   on_macos do
     on_intel do
-      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.4/weather-bro_Darwin_x86_64.tar.gz"
-      sha256 "d7039dce30dc96f69a98040afb1bcee4a24d8d8c61830222f346ae0568d78777"
+      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.5/weather-bro_Darwin_x86_64.tar.gz"
+      sha256 "e1f63e03d31be0b3cc3fb80acccc3d55af8825034ef12ad1b55333aeedda14e5"
 
       def install
         bin.install "weather-bro"
       end
     end
     on_arm do
-      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.4/weather-bro_Darwin_arm64.tar.gz"
-      sha256 "79e26dab3b6d7b130184d658e13868f5b4e3ee9b5e3af89226a9bd5015e08178"
+      url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.5/weather-bro_Darwin_arm64.tar.gz"
+      sha256 "f731393095949a7ad4cd1139c8293a09234b584233761b79110639328bd50ec6"
 
       def install
         bin.install "weather-bro"
@@ -29,8 +29,8 @@ class WeatherBro < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.4/weather-bro_Linux_x86_64.tar.gz"
-        sha256 "c8ea981d2864c9595ff0ecddb32bf30301388395840df0b51709f716b6592029"
+        url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.5/weather-bro_Linux_x86_64.tar.gz"
+        sha256 "21ee3524b3788d8695425f909a2f440ce5c9524c044db75593126ef7cf8635b6"
 
         def install
           bin.install "weather-bro"
@@ -39,8 +39,8 @@ class WeatherBro < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.4/weather-bro_Linux_arm64.tar.gz"
-        sha256 "8e38706a970cefcf39a627acecff78e8c94223f4cc8294c3d29d4cb9fcdb7517"
+        url "https://github.com/ty-e-boyd/weather-bro/releases/download/v1.0.5/weather-bro_Linux_arm64.tar.gz"
+        sha256 "fb3aa3046ec6cc36468e347c167375b735deca2dada42704da74f2e26ba808f8"
 
         def install
           bin.install "weather-bro"
